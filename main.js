@@ -90,7 +90,7 @@ while(number.length<=6){
 
 var a = 10;
 var b = 6;
-var c = '#';
+var c = '*';
 var d = ' ';
 
 
