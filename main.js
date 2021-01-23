@@ -45,19 +45,19 @@ console.log(newArray)
 // Create a new array that contains data from both arrays, but in alternating order, one element from array a, then one element from array b, and so on. 
 var a = [12, 56, 32, 44];
 var b = [88, 7, 13];
-var alternateArray = mergeAlternateArray(a, b);
+var newArray = joinTwoArray(a, b);
 
-function mergeAlternateArray(arrayA, arrayB) {
-    var newAlternateArray = [];
+function joinTwoArray(arrayA, arrayB) {
+    var newNewArray = [];
     for (var i = 0; i < arrayA.length; i++) {
-        newAlternateArray.push(arrayA[i]);
+        newNewArray.push(arrayA[i]);
         if (arrayB[i]) {
-            newAlternateArray.push(arrayB[i]);
+            newNewArray.push(arrayB[i]);
         }
     }
-    return newAlternateArray;
+    return newNewArray;
 }
-console.log(alternateArray)
+console.log(newArray)
 
 
 
