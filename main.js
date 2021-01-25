@@ -28,10 +28,16 @@ console.log(dataNew)
 // Repack old array to the new one, so the data from two arrays is joined, starting with existing data from the new one.Console log result.
 var dataOld = [34, true, "Peter", 1992];
 var dataNew = [12, "Jack"];
-  
+var i=0;
 for (var i = 0; i < dataOld.length; i++) {
-    dataNew.push(dataOld[i]);
+    dataNew[i]= dataNew[i++];{
+        if (i < dataOld.length) {
+            dataNew[i+2]=dataOld[i--];
+        }
+    }
+
 }
+
 console.log(dataNew)
 
 // task new 4
