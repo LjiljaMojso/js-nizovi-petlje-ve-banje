@@ -44,8 +44,26 @@ console.log(dataNew)
 // Create a new array that contains data from both arrays, starting with data from array a. Console log result
 var a = [12, 56, 32, 44, 69];
 var b = [88, 7, 13];
-var newArray = a.concat(b);
+var newArray =[];
+for (let i = 0; i <a.length; i++) {
+    newArray[i]= a[i];
+    if(b[i]) {
+        newArray[i + a.length] = b[i]; 
+        
+    }
+   
+}
 console.log(newArray)
+// primer sa časa
+
+var data=[1,2,3,4];
+data[data.length]=[];
+var innerArray=data[data.length-1];
+innerArray[innerArray.length]=0;
+innerArray[innerArray.length]=5;
+innerArray[innerArray.length]=9;
+console.log(data)
+
 
 // task new 5
 // Create a new array that contains data from both arrays, but in alternating order, one element from array a, then one element from array b, and so on. 
